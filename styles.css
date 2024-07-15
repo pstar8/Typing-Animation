@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #cfdfff;
+  color: #505c74;
+  font-size: 24px;
+  font-family: 'Barlow', monospace;
+  text-align: center;
+  /* Has no effect in inline-block */
+  text-decoration: underline;
+  text-decoration-color: #505c74c4;
+}
+
+body .container {
+  /* The text stays in the center */
+  display: inline-block;
+  margin: 20%;
+}
+
+p {
+  font-weight: 700;
+  font-size: 2.5rem;
+  /* Still strange but very important */
+  white-space: nowrap;
+  border-right: 0.3rem solid #485da1e8;
+  /* The animation itself */
+  animation: typing 6s steps(40, end) infinite;
+  /* Gives it the typing effect */
+  overflow: hidden;
+}
+
+@keyframes typing {
+  /* Where the animation starts from */
+  from {
+    width: 0%;
+  }
+
+  /* Where the animation ends */
+  to {
+    width: 100%;
+  }
+}
